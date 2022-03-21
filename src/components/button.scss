@@ -1,0 +1,40 @@
+button {
+  background-color: lightgrey;
+  border-radius: 5px;
+  //border: none;
+  width: 100px;
+  height: 30px;
+
+  &:hover, :focus{
+    background-color: darkgrey;
+    cursor: pointer;
+  }
+  
+  &.outline {
+    background-color: white;
+    //border: 20px;
+    border-color:rgb(0, 127, 255);
+
+    &:hover, :focus{
+      background-color: rgba(0, 127, 255, 10%);
+    }
+  }
+
+  &.text {
+    border: 0px;
+    background-color: white;
+    color:rgb(0, 127, 255);
+
+    &:hover, :focus{
+      background-color: rgba(0, 127, 255, 10%);
+    }
+  }
+
+  &.disable-shadow{
+    background-color: rgb(0, 127, 255);
+    color: white;
+    &:hover, :focus{
+      background-color: rgb(0, 127, 255);
+    }
+  }
+}
